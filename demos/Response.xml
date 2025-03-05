@@ -1,0 +1,10 @@
+<Response>
+    <Say>Welcome! You've reached the automated assistant for the Java and the Internet of Things presentation at Devnexus.</Say>
+    <Gather input="dtmf" numDigits="1" action="https://iotjavademo-7774.twil.io/handle-key" method="POST">
+        <Say>Press 1 to record a message.</Say>
+        <Say>Press 2 to hear a duck quack.</Say>
+        <Say>Press 3 to hang up.</Say>
+    </Gather>
+    <Say>We didn't receive any input. Goodbye.</Say>
+    <Hangup/>
+</Response>
